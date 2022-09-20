@@ -266,7 +266,7 @@ h3 {
   .content {
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
-    grid-template-rows: 4rem 25rem 25rem 25rem 2rem 35rem 10rem;
+    grid-template-rows: 4rem 25rem 25rem 25rem 2rem 35rem auto;
   }
 
   .API {
@@ -345,6 +345,5 @@ h3 {
     grid-column: 1/8;
     grid-row: 7;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    float: bottom;
   }
 }
