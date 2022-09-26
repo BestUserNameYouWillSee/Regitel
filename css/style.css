@@ -49,7 +49,7 @@ li {
 
 li:hover .link {
   color: #feed13;
-  transition: 0.2s linear;;
+  transition: 0.2s linear;
 }
 
 .logo {
@@ -353,5 +353,44 @@ h3 {
     grid-column: 1/8;
     grid-row: 7;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+@media only screen and (max-width: 720px) {
+
+  .content {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 4rem 25rem 25rem 25rem 2rem 50rem auto;
+  }
+
+  .About {
+    min-height: 300px;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 6;
+    padding: 1rem;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.1fr 1.5fr 2fr 0.1fr;
+    border-radius: 4px;
+  }
+
+  .Text {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .img-about {
+    grid-column: 2;
+    grid-row: 3;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
   }
 }
