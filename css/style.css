@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sand-serif;
+}
+
+/* --------------------------------------------- Styling body --------------------------------------------- */
+body {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: black;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/background.jpg") !important;
+}
+
+
+
+/* --------------------------------------------- Styling navigation --------------------------------------------- */
+
+nav > .nav-btn {
+  display: none;
+}
+
+nav > #nav-check {
+  display: none;
+}
+
+nav ul {
+  float:right;
+  display: inline;
+  text-align: right;
+  margin: 0.5% 1% 0% 0px;
+  padding: 0;
+  height: 6rem;
+  width: 40rem;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  padding: 0.4%;
+  margin: 0.3%;
+  top: 1.5rem;
+  width: 75px;
+  text-align: center;
+}
+
+
+.active .link {
+  color: #feed13;
+}
+
+li:hover .link {
+  color: #feed13;
+  transition: 0.2s linear;
+}
+
+.logo {
+  float: left;
+  height: 5rem;
+  position: relative;
+  margin: 0.7%;
+}
+
+ul li .link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* --------------------------------------------- Styling container --------------------------------------------- */
+
+.container {
+  display: grid;
+  grid-template-rows: 7rem auto;
+}
+
+/* --------------------------------------------- Styling Content --------------------------------------------- */
+
+.content {
+  display: grid;
+  min-height: 00%;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
+  grid-template-rows: 2rem 15rem 15rem 4rem 30rem 5rem 10rem;
+}
+
+/* ------------------------------------- API styling ------------------------------------- */
+.API {
+  display: grid;
+  grid-column: 2/7;
+  grid-row: 2/4;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 5px;
+}
+
+.api1 {
+  grid-column: 1;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.api2 {
+  grid-column: 2;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.api3 {
+  grid-column: 3;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* ------------------------------------- about styling ------------------------------------- */
+
+.About {
+  min-height: 500px;
+  display: grid;
+  grid-column: 2/7;
+  grid-row: 5;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  border-radius: 4px;
+}
+
+.Text {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: white;
+  overflow: hidden;
+}
+
+h2 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.img-about {
+  grid-column: 4/6;
+  grid-row: 2/4;
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 4px;
+  margin: 1rem;
+}
+
+/* ------------------------------------- about.html styling ------------------------------------- */
+
+.About1 {
+  min-height: 500px;
+  display: grid;
+  grid-column: 2/7;
+  grid-row: 2;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  border-radius: 4px;
+}
+
+/* ------------------------------------- contact.html styling -----------------------------------*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+
+.containercontact{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.containercontact:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+/* ------------------------------------- footer styling ------------------------------------- */
+
+.footer {
+  padding: 0;
+  display: grid;
+  background-color: black;
+  grid-column: 1/8;
+  grid-row: 7;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+h3 {
+  margin: 0.5rem;
+  color: white;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.social-media {
+  grid-column: 1;
+}
+
+.contact-footer {
+  grid-column: 2;
+}
+
+.locatie {
+  grid-column: 3;
+}
+
+.links {
+  grid-column: 4;
+}
+
+/* ------------------------------------- responsive styling ------------------------------------- */
+
+@media only screen and (max-width: 1042px) {
+  /* ------------------------------------- responsive navigation styling ------------------------------------- */
+
+  .logo {
+    float: left;
+    height: 4rem;
+    position: relative;
+    margin: 4%;
+  }
+
+  nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  nav > .nav-btn > label {
+    display: inline-block;
+    width: 6.1rem;
+    height: 6.1rem;
+    
+    padding: 27px;
+  }
+
+  nav > .nav-btn > label:hover,nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  nav > .nav-btn > label > span {
+    display: block;
+    width: 3rem;
+    height: 1rem;
+    border-top: 6px solid #eee;
+  }
+
+  nav > ul {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #131f35;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 6rem;
+    left: 0;
+    margin: 0;
+  }
+
+  nav > ul > .link {
+    display: block;
+    width: 100%;
+  }
+
+  nav > #nav-check:not(:checked) ~ ul {
+    height: 0px;
+  }
+
+  nav > #nav-check:checked ~ ul {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  li{
+    display: inline;
+    border-bottom: 0px;
+    border: 0px;
+    text-decoration: underline white;
+  }
+  /* ------------------------------------- responsive content styling ------------------------------------- */
+
+  .content {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 4rem 25rem 25rem 25rem 2rem 35rem auto;
+  }
+
+  .API {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 2/5;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr 0.4fr;
+    border-radius: 5px;
+  }
+
+  .api1 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .api2 {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .api3 {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  /* ------------------------------------- responsive about styling ------------------------------------- */
+
+  .About {
+    min-height: 300px;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 6;
+    padding: 1rem;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    border-radius: 4px;
+  }
+
+  .Text {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .img-about {
+    grid-column: 3;
+    grid-row: 2;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  /* ------------------------------------- responsive footer styling ------------------------------------- */
+
+  .footer {
+    padding: 0;
+    display: grid;
+    background-color: black;
+    grid-column: 1/8;
+    grid-row: 7;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+@media only screen and (max-width: 720px) {
+
+  .content {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 4rem 25rem 25rem 25rem 2rem 50rem auto;
+  }
+
+  .About {
+    min-height: 300px;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 6;
+    padding: 1rem;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.1fr 1.5fr 2fr 0.1fr;
+    border-radius: 4px;
+  }
+
+  .Text {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .img-about {
+    grid-column: 2;
+    grid-row: 3;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
+  }
+}
