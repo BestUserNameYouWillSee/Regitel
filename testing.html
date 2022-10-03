@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Word Lid</title>
+  <title>Contact us</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
   <link rel="stylesheet" href="./css/style.css" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,10 +29,10 @@
         <li>
           <a class="link about" href="about.html">About</a>
         </li>
-        <li>
+        <li class="active">
           <a class="link contact" href="./contact.html">Contact</a>
         </li>
-        <li class="active">
+        <li>
           <a class="link word_lid" href="word_lid.html">Word lid</a>
         </li>
         <li>
@@ -52,41 +53,45 @@
   <!----------------------------------------  End navigation  ---------------------------------------->
 
   <!----------------------------------------  Begin content  ---------------------------------------->
-  <div class="content">
-    <!----------------------------------------  Begin contact  ---------------------------------------->
-    <div class="word-lid-image">
-      <img src="img/word-lid1.png" alt="image word-lid1" />	
-      
-    </div>
-    <div class="word-lid-image2">
-      <img src="img/word-lid2.png" alt="image word-lid2" />	
-      
-    </div>
-    <div class="word-lid-info">
-      <h2>Lidmaatschap</h2>
-      <h4>Als u geïnteresseerd bent in een REGITEL-lidmaatschap, 
-      kunt u contact opnemen met één van de bestuursleden of met het secretariaat via info@regitel.nl, of het contactformulier gebruiken.</h4>
-      <br/><br/>
-      <h3>Lidmaatschapskosten</h3>
-      <h4>€ 395,- voor iedereen, vrij van BTW. Het onderscheid tussen commerciële bedrijven, onderwijs en ZZP-ers is vervallen.</h4>
-    </div>
-    <!----------------------------------------  End Content  ---------------------------------------->
+  
 
+    <!--Begin containercontact-->
+    <div class="containercontact">
+
+      <!--Begin context-box-->
+      <div class="context-box">
+        <div class="left"></div>
+        <div class="right">
+          <h2>Contact us</h2>
+          <input type="text" class="field" placeholder="Your Name">
+          <input type="email" class="field" placeholder="Your Email">
+          <input type="text" class="field" placeholder="Your Phone">
+          <textarea placeholder="Message" class="field area"></textarea>
+          <button class="btncontact">Verstuur</button>
+        </div>          
+
+      <!--End context-box-->
+      </div>
+      <footer class="footer">
+        <div class="social-media">
+          <h3>Social media</h3>
+        </div>
+        <div class="contact-footer">
+          <h3>Contact</h3>
+        </div>
+        <div class="locatie">
+          <h3>Locatie</h3>
+        </div>
+        <div class="links">
+          <h3>Links</h3>
+        </div>
+      </footer>
+      <!--End container-->
+    </div>
+    <!--End content-->
+    
     <!----------------------------------------  Start footer  ---------------------------------------->
-    <footer class="footer">
-      <div class="social-media">
-        <h3>Social media</h3>
-      </div>
-      <div class="contact-footer">
-        <h3>Contact</h3>
-      </div>
-      <div class="locatie">
-        <h3>Locatie</h3>
-      </div>
-      <div class="links">
-        <h3>Links</h3>
-      </div>
-    </footer>
+    
 </body>
 
 </html>
