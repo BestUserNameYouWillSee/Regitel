@@ -84,7 +84,6 @@ ul li .link {
   min-height: 00%;
   grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
   grid-template-rows: 2rem 15rem 15rem 4rem 30rem 15rem;
-  
 }
 
 /* ------------------------------------- API styling ------------------------------------- */
@@ -134,7 +133,6 @@ ul li .link {
 }
 
 .Text {
-  
   grid-column: 2/4;
   grid-row: 2/4;
   padding: 1rem;
@@ -161,15 +159,33 @@ h1 {
 
 /* ------------------------------------- about.html styling ------------------------------------- */
 
+.about-content {
+  position: relative;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
 .About1 {
-  min-height: 500px;
+  min-height: 50%;
   display: grid;
-  grid-column: 2/7;
-  grid-row: 2;
-  padding: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  padding: 5rem 1rem 1rem 1rem;
+  grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: 0.5fr auto 0.5fr;
   border-radius: 4px;
+}
+
+.Text2 {
+  background-color: rgba(230, 230, 230, 0.6);
+  grid-row: 2;
+  grid-column: 2;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+}
+
+.img-about2 {
+  background-color: rgba(230, 230, 230, 0.6);
+  grid-row: 2;
+  grid-column: 4;
 }
 
 /* ------------------------------------- contact.html styling -----------------------------------*/
@@ -180,7 +196,6 @@ h1 {
   grid-template-columns: 0.1fr 1fr 0.1fr;
   grid-template-rows: 0.1fr 1fr 0.1fr;
 }
-
 
 .context-box {
   margin: 0 5rem 15rem 5rem;
@@ -280,7 +295,7 @@ textarea {
   padding: 0;
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 0%;
   display: grid;
   background-color: black;
   grid-column: 1/8;
@@ -318,7 +333,7 @@ textarea {
   display: grid;
   padding: 5rem 0 20rem 0;
   grid-template-columns: 0.2fr 1fr 1rem 1fr 0.2fr;
-  grid-template-rows: 0.5fr 25rem 2rem 20rem 0.5fr;
+  grid-template-rows: 0.5fr 25rem 2rem auto 0.5fr;
 }
 
 .word-lid-info {
@@ -408,11 +423,13 @@ textarea {
 
   nav > #nav-check:not(:checked) ~ ul {
     height: 0px;
+    z-index: 100;
   }
 
   nav > #nav-check:checked ~ ul {
     height: calc(100vh - 50px);
     overflow-y: auto;
+    z-index: 100;
   }
 
   li {
