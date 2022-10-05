@@ -100,7 +100,7 @@ ul li .link {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: rgba(230, 230, 230, 0.6);
+  background-color: white;
 }
 
 .api2 {
@@ -108,7 +108,7 @@ ul li .link {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: rgba(230, 230, 230, 0.6);
+  background-color: white;
 }
 
 .api3 {
@@ -116,9 +116,20 @@ ul li .link {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: rgba(230, 230, 230, 0.6);
+  background-color: white;
 }
 
+.api4 {
+  min-height: 500px;
+  display: grid;
+  grid-column: 2/7;
+  grid-row: 2;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  border-radius: 4px;
+  background-color: white;
+}
 /* ------------------------------------- about styling ------------------------------------- */
 
 .About {
