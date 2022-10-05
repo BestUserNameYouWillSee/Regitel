@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact us</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Contact us</title>
-	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css" />
+  <body>
+    <!----------------------------------------  Begin navigation  ---------------------------------------->
+    <div class="container">
+      <nav class="navbar">
+        <input type="checkbox" id="nav-check" />
+        <div class="navbar-brand">
+          <img class="logo" src="./img/logo.png" alt="logo" />
+        </div>
+        <ul>
+          <li><a class="link home" href="index.html">Home</a></li>
+          <li>
+            <a class="link leden" href="leden.html">Leden</a>
+          </li>
+          <li>
+            <a class="link nieuws" href="nieuws.html">Nieuws</a>
+          </li>
+          <li>
+            <a class="link about" href="about.html">About</a>
+          </li>
+          <li class="active">
+            <a class="link contact" href="./contact.html">Contact</a>
+          </li>
+          <li>
+            <a class="link word_lid" href="word_lid.html">Word lid</a>
+          </li>
+          <li>
+            <a class="link login" href="login.html">Login</a>
+          </li>
+        </ul>
+        <!----------------------------------------  hamburger  ---------------------------------------->
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <!----------------------------------------  hamburger end  ---------------------------------------->
+      </nav>
+    </div>
+    <!----------------------------------------  End navigation  ---------------------------------------->
 
-</head>
-
-<body>
-  <!----------------------------------------  Begin navigation  ---------------------------------------->
-  <div class="container">
-    <nav class="navbar">
-      <input type="checkbox" id="nav-check">
-      <div class="navbar-brand">
-        <img class="logo" src="./img/logo.png" alt="logo" />
-      </div>
-      <ul>
-        <li><a class="link home" href="index.html">Home</a></li>
-        <li>
-          <a class="link leden" href="leden.html">Leden</a>
-        </li>
-        <li>
-          <a class="link nieuws" href="nieuws.html">Nieuws</a>
-        </li>
-        <li>
-          <a class="link about" href="about.html">About</a>
-        </li>
-        <li class="active">
-          <a class="link contact" href="./contact.html">Contact</a>
-        </li>
-        <li>
-          <a class="link word_lid" href="word_lid.html">Word lid</a>
-        </li>
-        <li>
-          <a class="link login" href="login.html">Login</a>
-        </li>
-      </ul>
-      <!----------------------------------------  hamburger  ---------------------------------------->
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-      <!----------------------------------------  hamburger end  ---------------------------------------->
-    </nav>
-  </div>
-  <!----------------------------------------  End navigation  ---------------------------------------->
-
-  <!----------------------------------------  Begin content  ---------------------------------------->
-  
+    <!----------------------------------------  Begin content  ---------------------------------------->
 
     <!--Begin containercontact-->
     <div class="containercontact">
-
       <!--Begin context-box-->
       <div class="context-box">
-        <div class="left"></div>
+        <div class="left">
+          <img src="img/bg.png" alt="bg.png">
+        </div>
         <div class="right">
           <h2>Contact us</h2>
-          <input type="text" class="field" placeholder="Your Name">
-          <input type="email" class="field" placeholder="Your Email">
-          <input type="text" class="field" placeholder="Your Phone">
+          <input type="text" class="field" placeholder="Your Name" />
+          <input type="email" class="field" placeholder="Your Email" />
+          <input type="text" class="field" placeholder="Your Phone" />
           <textarea placeholder="Message" class="field area"></textarea>
           <button class="btncontact">Verstuur</button>
-        </div>          
+        </div>
 
-      <!--End context-box-->
+        <!--End context-box-->
       </div>
+
+      <footer class="footer">
+        <div class="social-media">
+          <h3>Social media</h3>
+        </div>
+        <div class="contact-footer">
+          <h3>Contact</h3>
+        </div>
+        <div class="locatie">
+          <h3>Locatie</h3>
+        </div>
+        <div class="links">
+          <h3>Links</h3>
+        </div>
+      </footer>
       <!--End container-->
     </div>
     <!--End content-->
-    
-    <!----------------------------------------  Start footer  ---------------------------------------->
-    <footer class="footer">
-      <div class="social-media">
-        <h3>Social media</h3>
-      </div>
-      <div class="contact-footer">
-        <h3>Contact</h3>
-      </div>
-      <div class="locatie">
-        <h3>Locatie</h3>
-      </div>
-      <div class="links">
-        <h3>Links</h3>
-      </div>
-    </footer>
-</body>
 
+    <!----------------------------------------  Start footer  ---------------------------------------->
+  </body>
 </html>
