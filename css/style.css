@@ -17,6 +17,8 @@ body {
   background-image: url("../img/background.jpg") !important;
 }
 
+
+
 /* --------------------------------------------- Styling navigation --------------------------------------------- */
 
 nav > .nav-btn {
@@ -338,6 +340,53 @@ textarea {
   grid-column: 4;
 }
 
+  /* ------------------------------------- leden styling ------------------------------------- */
+
+  .lid-content {
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+    display: grid;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .lid {
+    display: grid;
+    grid-column: 2/5;
+    grid-template-columns: 2fr 2fr 2fr;
+    border-radius: 5px;
+    margin-bottom: 10rem;
+  }
+  
+  .lid1 {
+    min-height: 10rem;
+    grid-column: 1;
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .lid2 {
+    min-height: 10rem;
+    grid-column: 2;
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .lid3 {
+    min-height: 10rem;
+    grid-column: 3;
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: white;
+  }
+
 /* ------------------------------------- word-lid styling ------------------------------------- */
 .content-word-lid {
   position: relative;
@@ -522,19 +571,6 @@ textarea {
     height: auto;
     background-color: white;
     border-radius: 4px;
-  }
-  /* ------------------------------------- leden styling ------------------------------------- */
-
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-  }
-  .gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
   
   /* ------------------------------------- responsive footer styling ------------------------------------- */
