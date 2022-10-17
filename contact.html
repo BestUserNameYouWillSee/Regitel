@@ -66,17 +66,20 @@
           <img src="img/bg.png" alt="bg.png">
         </div>
         <div class="right">
+          <form onsubmit="sendEmail(); reset(); return false;">
           <h2>Contact us</h2>
-          <input type="text" class="field" placeholder="Your Name" />
-          <input type="email" class="field" placeholder="Your Email" />
-          <input type="text" class="field" placeholder="Your Phone" />
-          <textarea placeholder="Message" class="field area"></textarea>
-          <button class="btncontact">Verstuur</button>
+            <input type="text" class="field" placeholder="Your Name" />
+            <input type="email" class="field" placeholder="Your Email" />
+            <input type="text" class="field" placeholder="Your Phone" />
+            <textarea placeholder="Message" class="field area"></textarea>
+            <button class="btncontact" type="submit">Verstuur</button>
+          </form>
         </div>
 
         <!--End context-box-->
       </div>
 
+      <!-- Alleen mogelijk als het gehost word-->
       
       <footer class="footer">
         <ul class="social-links">
@@ -88,10 +91,27 @@
       <!--End container-->
     </div>
     <!--End content-->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "ObtivianusGarlic@gmail.com",
+          Password : "Garlic123",
+          To : 'roy.tieben@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "Contact Form",
+          Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script>
+</body>
+
     
     <!----------------------------------------  Start footer  ---------------------------------------->
-    
-</body>
 
     <!----------------------------------------  Start footer  ---------------------------------------->
   </body>
