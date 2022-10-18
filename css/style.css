@@ -320,12 +320,14 @@ textarea {
   bottom: -10rem;
   display: grid;
   background-color: black;
+  grid-row: last;
   grid-column: 1/8;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 13rem;
 }
 
 .footer h3 {
+  padding: 5px 20px 0px 20px;
   margin: 0.5rem;
   color: white;
   font-size: 1.2rem;
@@ -333,20 +335,17 @@ textarea {
   font-weight: 500;
 }
 
-.social-media {
+
+.contact-footer {
   grid-column: 1;
 }
 
-.contact-footer {
+.locatie {
   grid-column: 2;
 }
 
-.locatie {
-  grid-column: 3;
-}
-
 .links {
-  grid-column: 4;
+  grid-column: 3;
 }
 
 /* ------------------------------------- leden styling ------------------------------------- */
