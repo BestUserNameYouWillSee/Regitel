@@ -314,12 +314,12 @@ textarea {
 /* ------------------------------------- footer styling ------------------------------------- */
 
 .footer {
-  padding: 0;
+  padding: 5px 20px 0px 20px;
   position: absolute;
   width: 100%;
   bottom: -10rem;
   display: grid;
-  background-color: black;
+  background-color: rgb(22, 22, 22);
   grid-row: last;
   grid-column: 1/8;
   grid-template-columns: 1fr 1fr 1fr;
@@ -327,7 +327,6 @@ textarea {
 }
 
 .footer h3 {
-  padding: 5px 20px 0px 20px;
   margin: 0.5rem;
   color: white;
   font-size: 1.2rem;
@@ -335,16 +334,57 @@ textarea {
   font-weight: 500;
 }
 
+.footer a {
+  margin: 0.5rem;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer button {
+  border-radius: 4px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 0px 5px 0px;
+  font-family: sans-serif;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.youtube {
+  background-color: rgb(206, 5, 5);
+}
+
+.instagram {
+  background-color: rgb(179, 0, 185);
+}
+
+.twitter {
+  background-color: rgb(0, 137, 179);
+}
 
 .contact-footer {
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 5px rgba(70, 70, 70, 0.19);
+  margin: 0px 10px 5px 10px;
   grid-column: 1;
 }
 
 .locatie {
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 5px rgba(70, 70, 70, 0.19);
+  margin: 0px 10px 5px 10px;
   grid-column: 2;
 }
 
 .links {
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 5px rgba(70, 70, 70, 0.19);
+  margin: 0px 10px 5px 10px;
   grid-column: 3;
 }
 
@@ -366,7 +406,7 @@ textarea {
 }
 
 .lid1 {
-  display : grid;
+  display: grid;
   grid-template-columns: 9rem auto;
   min-height: 10rem;
   grid-column: 1;
@@ -378,7 +418,7 @@ textarea {
 }
 
 .lid2 {
-  display : grid;
+  display: grid;
   grid-template-columns: 9rem auto;
   min-height: 10rem;
   grid-column: 2;
@@ -390,7 +430,7 @@ textarea {
 }
 
 .lid3 {
-  display : grid;
+  display: grid;
   grid-template-columns: 9rem auto;
   min-height: 10rem;
   grid-column: 3;
@@ -400,14 +440,14 @@ textarea {
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.lid-logo{
+.lid-logo {
   grid-column: 1;
   padding: 0.5rem;
   background-color: white;
   border-radius: 4px;
 }
 
-.lid-info{
+.lid-info {
   grid-column: 2;
   padding: 0.5rem;
   margin-left: 10px;
@@ -559,7 +599,6 @@ textarea {
     grid-template-rows: 8rem 1fr 10rem;
   }
 
-
   /* ------------------------------------- responsive about styling ------------------------------------- */
 
   .About {
@@ -643,6 +682,74 @@ textarea {
     margin-bottom: 20px;
     grid-row: 2;
   }
+
+  /* ------------------------------------- leden styling ------------------------------------- */
+
+  .lid-content {
+    grid-template-columns: 0.1rem 1fr 1fr 1fr 0.1rem;
+    display: grid;
+    position: relative;
+    height: 100vh;
+  }
+
+  .lid {
+    display: grid;
+    grid-column: 2/5;
+    grid-template-columns: 2fr;
+    border-radius: 5px;
+    margin-bottom: 10rem;
+  }
+
+  .lid1 {
+    display: grid;
+    grid-template-columns: 10rem auto;
+    min-height: 11rem;
+    grid-column: 1;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .lid2 {
+    display: grid;
+    grid-template-columns: 10rem auto;
+    min-height: 11rem;
+    grid-column: 1;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .lid3 {
+    display: grid;
+    grid-template-columns: 10rem auto;
+    min-height: 11rem;
+    grid-column: 1;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .lid-logo {
+    grid-column: 1;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .lid-info {
+    grid-column: 2;
+    padding: 0.5rem;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  }
 }
 
 /* ------------------------------------- smaller screen styling ------------------------------------- */
@@ -668,13 +775,13 @@ textarea {
   }
 
   .Text {
-    overflow:scroll;
+    overflow: scroll;
   }
 
   .img-about {
     grid-column: 2;
     grid-row: 3;
-    margin: 1.5rem 0 0 0 ;
+    margin: 1.5rem 0 0 0;
   }
 
   .navbar-brand .uil {
@@ -721,31 +828,29 @@ textarea {
     padding-top: 0;
   }
 
-
   /* ------------------------------------- word-lid styling ------------------------------------- */
-.content-word-lid {
-  padding:0;
-  grid-template-columns: 1rem 1fr 1rem;
-  grid-template-rows: 2rem 20rem 1rem 20rem 2rem auto;
-}
+  .content-word-lid {
+    padding: 0;
+    grid-template-columns: 1rem 1fr 1rem;
+    grid-template-rows: 2rem 20rem 1rem 20rem 2rem auto;
+  }
 
-.word-lid-info {
-  grid-column: 2;
-  grid-row: 6;
-  padding: 10px;
-}
+  .word-lid-info {
+    grid-column: 2;
+    grid-row: 6;
+    padding: 10px;
+  }
 
+  .word-lid-image2 {
+    grid-column: 2;
+    grid-row: 4;
+  }
 
-.word-lid-image2 {
-  grid-column: 2;
-  grid-row: 4;
-}
+  .word-lid-info h2 {
+    font-size: 35px;
+  }
 
-.word-lid-info h2 {
-  font-size: 35px;
-}
-
-.word-lid-info h3 {
-  font-size: 25px;
-}
+  .word-lid-info h3 {
+    font-size: 25px;
+  }
 }
