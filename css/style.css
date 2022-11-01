@@ -18,7 +18,6 @@ body {
 }
 
 /* --------------------------------------------- Styling navigation --------------------------------------------- */
-
 nav > .nav-btn {
   display: none;
 }
@@ -64,16 +63,21 @@ li:hover .link {
 }
 
 ul li .link {
+  font-weight:400 bold !important;
   display: block;
-  color: #fff;
+  color: rgb(214, 214, 214);
   text-decoration: none;
 }
 
 /* --------------------------------------------- Styling container --------------------------------------------- */
 
 .container {
+  z-index: 100000;
   display: grid;
   grid-template-rows: 7rem auto;
+  position: sticky;
+  width: 100%;
+  top:0%
 }
 
 /* --------------------------------------------- Styling Content --------------------------------------------- */
