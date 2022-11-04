@@ -13,7 +13,6 @@ body {
   font-family: sans-serif;
   color: black;
   width: 100%;
-  height: 100vh;
   background-image: url("../img/background.jpg") !important;
 }
 
@@ -190,8 +189,8 @@ h1 {
 .img-about3 {
   grid-column: 4/6;
   grid-row: 2/4;
-  width: 48rem;
-  height: 36rem;
+  max-width: 48rem;
+  max-height: 36rem;
   border-radius: 0px;
   margin: 0rem;
 }
@@ -210,6 +209,7 @@ h1 {
   grid-template-columns: 0.2fr 1fr 0.1fr 1fr 0.2fr;
   grid-template-rows: 0.5fr auto auto 0.5fr;
   border-radius: 4px;
+
 }
 
 .Text2 {
@@ -240,6 +240,7 @@ h1 {
   padding: 1rem 2rem;
   margin:2rem 0 2rem 0;
 }
+
 
 /* ------------------------------------- contact.html styling -----------------------------------*/
 
@@ -495,13 +496,15 @@ textarea {
 .word-lid-2 {
   grid-column: 4;
   grid-row: 2;
+  padding-left: 80px;
 
 }
 
 .word-lid-image {
   max-height: 25rem;
   max-width: 50rem;
-  margin: 1rem;
+  margin: 1px;
+  padding-left: 80px;
 }
 
 .word-lid-image2{
@@ -646,6 +649,8 @@ textarea {
     grid-row: 2;
   }
 
+  
+
   /* ------------------------------------- responsive footer styling ------------------------------------- */
 
   .footer {
@@ -666,7 +671,7 @@ textarea {
     display: grid;
     padding: 5rem 1rem 1rem 1rem;
     grid-template-columns: 0.2fr 1fr.2fr;
-    grid-template-rows: 0.5fr auto 3rem auto 0.5fr;
+    grid-template-rows: 2rem auto 1rem auto 2rem auto 2rem;
     border-radius: 4px;
   }
 
@@ -675,6 +680,7 @@ textarea {
     grid-column: 2;
     padding: 2rem 3rem;
     border-radius: 8px;
+    margin:0%;
   }
 
   .img-about2 {
@@ -682,6 +688,19 @@ textarea {
     grid-column: 2;
     height: auto;
   }
+
+  .Text3 {
+    background-color: rgba(255, 255, 255, 0.9);
+    grid-row: 6;
+    grid-column: 2;
+    border-radius: 8px;
+    border-spacing: 10%;
+    padding: 2rem 3rem;
+    overflow: scroll;
+    height: 20rem;
+  }
+
+  
 
   /* ------------------------------------- phone contact.html styling -----------------------------------*/
 
@@ -710,7 +729,7 @@ textarea {
   /* ------------------------------------- leden styling ------------------------------------- */
 
   .lid-content {
-    grid-template-columns: 0.1rem 1fr 1fr 1fr 0.1rem;
+    grid-template-columns: 0.1rem 1fr 0.1rem;
     display: grid;
     position: relative;
     height: 100vh;
@@ -718,7 +737,7 @@ textarea {
 
   .lid {
     display: grid;
-    grid-column: 2/5;
+    grid-column: 2;
     grid-template-columns: 2fr;
     border-radius: 5px;
     margin-bottom: 10rem;
@@ -803,6 +822,7 @@ textarea {
   }
 
   .img-about {
+    width: 100%;
     grid-column: 2;
     grid-row: 3;
     margin: 1.5rem 0 0 0;
@@ -836,6 +856,7 @@ textarea {
   .Text2 {
     overflow: scroll;
     max-height: 25rem;
+    width: 20rem;
     grid-row: 2;
     grid-column: 2;
   }
@@ -844,8 +865,11 @@ textarea {
     background-size: cover;
     grid-row: 4;
     grid-column: 2;
+    width: 20rem;
     height: 200px;
+    padding: 0 0 0 20px;
   }
+
 
   .about-content {
     height: auto;
@@ -876,5 +900,60 @@ textarea {
 
   .word-lid-info h3 {
     font-size: 25px;
+  }
+
+  /* ------------------------------------- leden styling ------------------------------------- */
+
+  .lid1 {
+    display: grid;
+    grid-template-columns: 8rem auto;
+    min-height: 9rem;
+    grid-column: 1;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .lid2 {
+    display: grid;
+    grid-template-columns: 8rem auto;
+    min-height: 9rem;
+    grid-column: 1;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .lid3 {
+    display: grid;
+    grid-template-columns: 8rem auto;
+    min-height: 9rem;
+    grid-column: 1;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    height: 40%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .lid-logo {
+    height: 8rem;
+    grid-column: 1;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .lid-info {
+    font-size: 0.8rem;
+    grid-column: 2;
+    padding: 0.5rem;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
   }
 }

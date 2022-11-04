@@ -136,6 +136,7 @@
 @media(max-width: 767px){
 	.login-popup .box{
 		width: calc(100% - 30px);
+		top: 25rem;
 	}
 	.login-popup .box .img-area{
 		display: none;
@@ -144,4 +145,20 @@
 		flex: 0 0 100%;
         max-width: 100%;
 	}
+}
+
+
+@media only screen and (max-width: 1042px) {
+	.login-popup .box{
+		width: calc(100% - 30px);
+		top: 25rem;
+	}
+	.login-popup .box .img-area{
+		display: none;
+	}
+	.login-popup .box .form{
+		flex: 0 0 100%;
+        max-width: 100%;
+	}
+
 }
