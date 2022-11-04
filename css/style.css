@@ -172,11 +172,28 @@ h1 {
 .img-about {
   grid-column: 4/6;
   grid-row: 2/4;
-  width: auto;
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.9);
+  width: 38rem;
+  height: 28rem;
   border-radius: 4px;
   margin: 1rem;
+}
+
+.img-about2 {
+  grid-column: 4/6;
+  grid-row: 2/4;
+  width: 48rem;
+  height: 36rem;
+  border-radius: 0px;
+  margin: 0rem;
+}
+
+.img-about3 {
+  grid-column: 4/6;
+  grid-row: 2/4;
+  width: 48rem;
+  height: 36rem;
+  border-radius: 0px;
+  margin: 0rem;
 }
 
 /* ------------------------------------- about.html styling ------------------------------------- */
@@ -217,13 +234,11 @@ h1 {
 }
 
 .img-about2 {
-  background-color: rgba(255, 255, 255, 0.9);
   grid-row: 2/4;
   grid-column: 4;
   border-spacing: 10%;
   padding: 1rem 2rem;
   margin:2rem 0 2rem 0;
-
 }
 
 /* ------------------------------------- contact.html styling -----------------------------------*/
@@ -244,7 +259,6 @@ h1 {
 }
 
 .left {
-  background-color: rgba(255, 255, 255, 0.9);
   background-size: cover;
   grid-column: 1;
   height: 100%;
@@ -472,16 +486,26 @@ textarea {
   border-radius: 10px;
 }
 
-.word-lid-image {
+.word-lid-1 {
   grid-column: 2;
   grid-row: 2;
-  background-color: rgba(255, 255, 255, 0.9);
+
 }
 
-.word-lid-image2 {
+.word-lid-2 {
   grid-column: 4;
   grid-row: 2;
-  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+.word-lid-image {
+  max-height: 25rem;
+  max-width: 50rem;
+  margin: 1rem;
+}
+
+.word-lid-image2{
+  max-height: 25rem;
 }
 
 .word-lid-info h2 {
