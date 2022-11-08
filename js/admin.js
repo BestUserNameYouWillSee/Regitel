@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     var request = new XMLHttpRequest();
  
     request.open('POST', 'https://api.bundeling.com/V2/login');
@@ -21,3 +22,5 @@
 
     request.send(JSON.stringify(body));
 
+=======
+>>>>>>> 936f626988c19bb1844063a367cc8da54716e149
