@@ -407,6 +407,7 @@ textarea {
 
 .lid-info {
   grid-column: 2;
+  font-size:0.9rem;
   padding: 0.5rem;
   margin-left: 10px;
   border-radius: 4px;
