@@ -21,7 +21,3 @@
 
     request.send(JSON.stringify(body));
 
-    console.log(authent);
-
-    export function authent()
-
