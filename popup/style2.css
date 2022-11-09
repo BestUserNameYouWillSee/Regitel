@@ -29,7 +29,7 @@
 }
 .login-popup .box{
 	background-color:#ffffff;
-	width: 45%;
+	width: 50%;
 	position: absolute;
 	left: 50%;
 	top: 40%;
@@ -66,12 +66,13 @@
 	width: 90%;
 	height: 90%;
 	background-image: url('/img/logo-small.png');
+	background-repeat:no-repeat;
 	background-size: cover;
 	background-size: 90%;
 	background-position: center;
 	animation: zoomInOut 7s linear infinite;
 	z-index: -1;
-
+	overflow-y: hidden;
 }
 @keyframes zoomInOut{
 	0%,100%{

@@ -14,6 +14,7 @@ body {
   color: black;
   width: 100%;
   background-image: url("../img/background.jpg") !important;
+  background-size: 400%;
 }
 
 /* --------------------------------------------- Styling navigation --------------------------------------------- */
@@ -72,6 +73,7 @@ ul li .link {
 
 .container {
   background-image: url(../img/background.jpg);
+  background-size: 400%;
   z-index: 100000;
   display: grid;
   grid-template-rows: 7rem auto;
