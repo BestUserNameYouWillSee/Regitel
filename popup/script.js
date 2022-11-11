@@ -5,11 +5,11 @@
   window.addEventListener("load",function(){
  
   showPopup();
-    setTimeout(function(){
+      setTimeout(function(){
       loginPopup.classList.add("show");
     },5000)
 
-  })
+ })
 
   function showPopup(){
         const timeLimit =120 // seconds;
