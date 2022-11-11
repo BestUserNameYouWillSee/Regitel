@@ -7,7 +7,7 @@
   showPopup();
       setTimeout(function(){
       loginPopup.classList.add("show");
-    },5000)
+    },300000)
 
  })
 
