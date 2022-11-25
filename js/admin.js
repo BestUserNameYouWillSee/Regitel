@@ -5,8 +5,7 @@ function news(token) {
         if (this.readyState === 4) {
             console.log(JSON.parse(this.responseText));
             //document.body.innerHTML = response
-            document.getElementsByClassName("api2")[0].innerHTML = JSON.parse(this.responseText).content;
-
+            document.getElementsByClassName("api1")[0].innerHTML = JSON.parse(this.responseText).content;
         }
     });
 
