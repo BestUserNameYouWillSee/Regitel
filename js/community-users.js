@@ -5,7 +5,7 @@ function users(token) {
         if (this.readyState === 4) {
             console.log(JSON.parse(this.responseText));
             //document.body.innerHTML = response
-            document.getElementsByClassName("api3")[0].innerHTML = JSON.parse(this.responseText).linkedin;
+            document.getElementsByClassName("api3")[0].innerHTML = JSON.parse(this.responseText).name;
         }
     });
 
