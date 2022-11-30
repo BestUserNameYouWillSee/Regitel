@@ -6,6 +6,7 @@ function users(token) {
             console.log(JSON.parse(this.responseText));
             //document.body.innerHTML = response
             document.getElementsByClassName("api3")[0].innerHTML = JSON.parse(this.responseText).name;
+
         }
     });
 

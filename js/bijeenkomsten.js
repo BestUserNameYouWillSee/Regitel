@@ -4,8 +4,13 @@ function bijeenkomsten(token) {
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
             console.log(JSON.parse(this.responseText));
+            var bijeenkomsttitle = JSON.parse(this.responseText).title;
+            var bijeenkomstdescription = JSON.parse(this.responseText).description;
+            var bijeenkomstdate = JSON.parse(this.responseText).date;
             //document.body.innerHTML = response
-            document.getElementsByClassName("api2")[0].innerHTML = JSON.parse(this.responseText).description;
+            document.getElementById("title1").innerHTML = bijeenkomsttitle;
+            document.getElementById("description1").innerHTML = bijeenkomstdescription;
+            document.getElementById("date1").innerHTML = bijeenkomstdate;
         }
     });
 
