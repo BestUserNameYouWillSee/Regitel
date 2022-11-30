@@ -9,7 +9,7 @@ function news(token) {
         }
     });
 
-    xhr.open("GET", "https://api.bundeling.com/V2/news/2f1e536bf59d4fdeabb7beeed5444d24");
+    xhr.open("GET", "https://api.bundeling.com/V2/news/e5fcab2cb93c484bb0a11cc9bddf67b4");
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("Api-Key", "830919aae3594240990576b77fd7e635");
     xhr.setRequestHeader("Authorization", `BundelingAuth ${token}`);
