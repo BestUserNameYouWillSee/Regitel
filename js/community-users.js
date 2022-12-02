@@ -4,9 +4,10 @@ function users(token) {
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
             console.log(JSON.parse(this.responseText));
-            //document.body.innerHTML = response
-            document.getElementsByClassName("api3")[0].innerHTML = JSON.parse(this.responseText).name;
+            array = JSON.parse(this.responseText);
+            const datauser = [JSON.parse(this.responseText).data[0].uuid];
 
+            console.log(datauser)
         }
     });
 

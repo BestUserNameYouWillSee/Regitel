@@ -5,16 +5,16 @@ function news(token) {
     if (this.readyState === 4) {
       console.log(JSON.parse(this.responseText));
 
-      const nieuwscontent = [JSON.parse(this.responseText).content];
-      const nieuwstitle = [JSON.parse(this.responseText).title];
+      const Newscontent = [JSON.parse(this.responseText).data[0].content];
+      const Newstitle = [JSON.parse(this.responseText).data[0].title];
       //document.body.innerHTML = response
-      document.getElementById("title").innerHTML = nieuwstitle;
-      document.getElementById("description").innerHTML = nieuwscontent;
+      document.getElementById("title").innerHTML = Newstitle;
+      document.getElementById("description").innerHTML = Newscontent;
 
     }
   });
 
-  xhr.open("GET", "https://api.bundeling.com/V2/news/e5fcab2cb93c484bb0a11cc9bddf67b4");
+  xhr.open("GET", "https://api.bundeling.com/V2/news");
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.setRequestHeader("Api-Key", "830919aae3594240990576b77fd7e635");
   xhr.setRequestHeader("Authorization", `BundelingAuth ${token}`);

@@ -106,8 +106,10 @@ ul li .link {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.9);
-  overflow: scroll;
+  background-color: rgba(207, 216, 238, 0.9);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
 }
 
 .api2 {
@@ -116,8 +118,10 @@ ul li .link {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.9);
-  overflow: scroll;
+  background-color: rgba(207, 216, 238, 0.9);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 .api3 {
@@ -126,8 +130,10 @@ ul li .link {
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.9);
-  overflow: scroll;
+  background-color: rgba(207, 216, 238, 0.9);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 /* ------------------------------------- news.html styling ------------------------------------- */
