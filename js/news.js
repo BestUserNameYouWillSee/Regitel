@@ -7,9 +7,11 @@ function news(token) {
 
       const Newscontent = [JSON.parse(this.responseText).data[0].content];
       const Newstitle = [JSON.parse(this.responseText).data[0].title];
+      const Newspicture = [JSON.parse(this.responseText).data[0].picture];
       //document.body.innerHTML = response
       document.getElementById("title").innerHTML = Newstitle;
       document.getElementById("description").innerHTML = Newscontent;
+      document.getElementById("picture").src = Newspicture;
 
     }
   });

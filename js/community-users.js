@@ -9,8 +9,10 @@ function users(token) {
             while (i < 50) {
                 console.log(JSON.parse(this.responseText));
                 var name = JSON.parse(this.responseText).data[i].name;
-                document.getElementById("api3").innerHTML = name;
-                i += 1;
+                const names = [JSON.parse(this.responseText).data[i].name];
+                i + 1;
+
+                console.log(names);
             }
 
         }
