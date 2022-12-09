@@ -185,7 +185,8 @@ ul li .link {
   grid-row: 2;
   margin: 1rem 0 1rem 0;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
   overflow: scroll;
 }
