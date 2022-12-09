@@ -7,21 +7,18 @@ function users(token) {
             let i = 0;
             
             console.log(JSON.parse(this.responseText));
-
             while (i < 50) {
                 const names = [JSON.parse(this.responseText).data[i].name];;
-                names1.push([JSON.parse(this.responseText).data[i].name]);
+                names1.push(JSON.parse(this.responseText).data[i].name + "<br/>");
 
-                document.getElementById("api3").innerHTML = names1;
-                
-
-                console.log(names)
+                document.getElementById("api3").innerHTML =  names1 ;
                 i += 1;
 
             }
 
         }
     });
+
 
     xhr.open("GET", "https://api.bundeling.com/V2/users");
     xhr.setRequestHeader("Content-Type", "application/json");
