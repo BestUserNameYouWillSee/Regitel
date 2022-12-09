@@ -16,7 +16,7 @@ function news(token) {
     }
   });
 
-  xhr.open("GET", "https://api.bundeling.com/V2/news");
+  xhr.open("GET", "https://api.bundeling.com/V2/news", "https://api.bundeling.com/V2/files${Newspicture}");
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.setRequestHeader("Api-Key", "830919aae3594240990576b77fd7e635");
   xhr.setRequestHeader("Authorization", `BundelingAuth ${token}`);

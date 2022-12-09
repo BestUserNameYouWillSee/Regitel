@@ -1,4 +1,4 @@
-function news(token) {
+function image(token) {
   var xhr = new XMLHttpRequest();
 
   xhr.addEventListener("readystatechange", function () {
@@ -9,7 +9,7 @@ function news(token) {
     }
   });
 
-  xhr.open("GET", "https://api.bundeling.com/V2/news/e5fcab2cb93c484bb0a11cc9bddf67b4");
+  xhr.open("GET", "https://api.bundeling.com/V2/documentation/method/files/single?format=json&language=raw");
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.setRequestHeader("Api-Key", "830919aae3594240990576b77fd7e635");
   xhr.setRequestHeader("Authorization", `BundelingAuth ${token}`);
@@ -27,7 +27,7 @@ var xhr = new XMLHttpRequest();
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === 4) {
     const data = JSON.parse(this.responseText);
-    news(data.token);
+    image(data.token);
   }
 });
 
