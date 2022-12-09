@@ -4,14 +4,16 @@ function users(token) {
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
             const names1 = [""];
+            const Images = [""];
             let i = 0;
             
             console.log(JSON.parse(this.responseText));
             while (i < 50) {
-                const names = [JSON.parse(this.responseText).data[i].name];;
+                //Images.push(JSON.parse(this.responseText).data[i].picture);
                 names1.push(JSON.parse(this.responseText).data[i].name + "<br/>");
 
-                document.getElementById("api3").innerHTML =  names1 ;
+                //document.getElementById("api3").src =  Images.join("");
+                document.getElementById("api3").innerHTML =  names1.join("");
                 i += 1;
 
             }
