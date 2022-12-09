@@ -3,15 +3,18 @@ function users(token) {
 
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
-
+            const names1 = [""];
             let i = 0;
-
+            
             console.log(JSON.parse(this.responseText));
 
             while (i < 50) {
-
                 const names = [JSON.parse(this.responseText).data[i].name];;
-                document.getElementById("api3").innerHTML = names;
+                names1.push([JSON.parse(this.responseText).data[i].name]);
+
+                document.getElementById("api3").innerHTML = names1;
+                
+
                 console.log(names)
                 i += 1;
 
