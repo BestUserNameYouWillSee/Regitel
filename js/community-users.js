@@ -17,6 +17,7 @@ function users(token) {
         if (this.readyState === 4) {
             const names1 = [""];
             const Images = [""];
+            const test = ["eyJjbGllbnQiOjI0OTcsInBhdGgiOiJ1c2Vyc1wvNTE5MzAyXC91c2VycGljdHVyZV82MjBmOTM2ZDU2ZWI4XzE2NDUxODc5NDkuanBnIiwibW9kaWZpZWQiOjE2NDUxODc5NDl9"]
             //const newRequest = new Request("https://api.bundeling.com/V2/users", Images);
             let i = 0;
             console.log(JSON.parse(this.responseText))
@@ -25,8 +26,10 @@ function users(token) {
                 Images.push(JSON.parse(this.responseText).data[i].picture);
                 //const ImagesTest = [JSON.parse(this.responseText).data[i].picture];
                 names1.push(JSON.parse(this.responseText).data[i].name + "<br/>");
+                var test1 = "https://api.bundeling.com/V2/users" + test;
+                document.getElementById("image").src =  test1
                 //document.getElementById("image").src = ImagesTest;
-                document.getElementById("image").src =  Images.join("https://api.bundeling.com/V2/users");
+                document.getElementById("image").src =  Images.join("");
                 document.getElementById("naam").innerHTML =  names1.join("");
                 i += 1;
             }
